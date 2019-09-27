@@ -1,0 +1,6 @@
+src/serviceWorker.js
+src/index.js
+src/setupTests.js
+src/**/*.test.js
+src/**/*.spec.js
+src/**/*.svg

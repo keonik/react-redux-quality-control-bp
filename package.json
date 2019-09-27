@@ -1,0 +1,113 @@
+{
+    "name": "cra-redux-plus-quality-control",
+    "author": {
+        "name": "Keoni Fay",
+        "email": "john.k.fay@gmail.com",
+        "url": "https://github.com/keonik"
+    },
+    "keywords": [
+        "react",
+        "redux",
+        "eslint",
+        "prettier",
+        "styling",
+        "frontend",
+        "sass",
+        "sass-lint",
+        "sonarqube",
+        "cypress"
+    ],
+    "version": "0.1.0",
+    "private": false,
+    "dependencies": {
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "react-redux": "^7.1.1",
+        "react-scripts": "^3.1.2",
+        "redux": "^4.0.4",
+        "redux-devtools-extension": "^2.13.8"
+    },
+    "scripts": {
+        "build": "react-scripts build",
+        "e2e": "cypress run",
+        "eject": "react-scripts eject",
+        "format": "npm run format:eslint && npm run format:sass && npm run format:prettier",
+        "format:eslint": "eslint --fix src",
+        "format:prettier": "prettier --write 'src/**/*'",
+        "format:sass": "sass-lint-auto-fix",
+        "lint": "npm run lint:js && npm run lint:sass",
+        "lint:js": "eslint src",
+        "lint:sass": "sass-lint -v -q",
+        "prettier": "prettier --check 'src/**/*'",
+        "release": "standard-version --no-verify",
+        "sonar": "sonar-scanner",
+        "start": "react-scripts start",
+        "test": "rm -rf ./coverage && CI=true react-scripts test --verbose --env=jsdom --coverage --colors"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "jest": {
+        "coverageReporters": [
+            "text-summary",
+            "lcov"
+        ],
+        "collectCoverageFrom": [
+            "src/**/*.{js, jsx}",
+            "!<rootDir>/node_modules/",
+            "!src/**/*Constants.js",
+            "!src/**/*LocalStorage.js",
+            "!src/**/*index.js",
+            "!src/setupTests.js",
+            "!src/serviceWorker.js"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm test && npm run lint:sass && NODE_ENV=production lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,scss,sass}": [
+            "pretty-quick --staged",
+            "npm run format",
+            "git add"
+        ],
+        "*.{json,css,md}": [
+            "pretty-quick --staged",
+            "git add"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@testing-library/react": "^9.1.4",
+        "cypress": "^3.4.1",
+        "eslint": "^6.4.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-react": "^7.14.3",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.3.0",
+        "node-sass": "^4.12.0",
+        "prettier": "^1.18.2",
+        "pretty-quick": "^1.11.1",
+        "sass-lint": "^1.13.1",
+        "sass-lint-auto-fix": "^0.17.0",
+        "sonar-scanner": "^3.1.0",
+        "standard-version": "^7.0.0"
+    }
+}
