@@ -1,0 +1,164 @@
+@import '../../sass/colors';
+@import '../../sass/typography';
+
+// Button Variables
+// ------------------------
+// Default transparent button -> Good for text/icon Buttons
+$Button-color: $color-primary;
+$Button-color-hover: lighten($color-primary, 15%);
+$Button-color-disabled: $color-gray-48;
+$Button-fontsize: $fontsize-normal;
+$Button-fontweight: $fontweight-normal;
+
+// Shared styles between Primary and Secondary buttons
+$Button-border-radius: 5px;
+$Button-padding: 0.35em 1.5em;
+
+// Primary Button
+$Button-primary-bg: $color-primary;
+$Button-primary-bg-hover: $Button-color-hover;
+$Button-primary-color: $color-white;
+$Button-primary-disabled-bg: $color-gray-48;
+$Button-primary-disabled-color: $color-gray-95;
+$Button-primary-fontsize: $fontsize-normal;
+$Button-primary-fontweight: $fontweight-normal;
+
+// Secondary Button
+$Button-secondary-color: $color-medium-green;
+$Button-secondary-color-hover: lighten($color-medium-green, 15%);
+$Button-secondary-border: 2px solid $color-medium-green;
+$Button-secondary-border-hover: 2px solid lighten($color-medium-green, 15%);
+$Button-secondary-color-disabled: $color-gray-48;
+$Button-secondary-border-disabled: 2px solid $color-gray-48;
+// ------------------------
+
+// Styling for buttons
+.Button {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: $Button-color;
+    cursor: pointer;
+    display: flex;
+    font-size: $Button-fontsize;
+    font-weight: $Button-fontweight;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+    i,
+    svg {
+        fill: $Button-color;
+        height: $Button-fontsize;
+        margin: 0.5em;
+        width: $Button-fontsize;
+    }
+
+    &:hover {
+        color: $Button-color-hover;
+
+        svg {
+            fill: $Button-color-hover;
+        }
+    }
+
+    &-disabled {
+        @extend .Button;
+
+        color: $Button-color-disabled;
+        cursor: default;
+
+        svg {
+            fill: $Button-color-disabled;
+        }
+
+        &:hover {
+            color: $Button-color-disabled;
+
+            svg {
+                fill: $Button-color-disabled;
+            }
+        }
+    }
+
+    &-primary {
+        @extend .Button;
+
+        background: $Button-primary-bg;
+        border-radius: $Button-border-radius;
+        color: $Button-primary-color;
+        font-size: $Button-primary-fontsize;
+        font-weight: $Button-primary-fontweight;
+        padding: $Button-padding;
+
+        svg {
+            fill: $Button-primary-color;
+        }
+
+        &:hover {
+            background: $Button-primary-bg-hover;
+            color: $Button-primary-color;
+
+            svg {
+                fill: $Button-primary-color;
+            }
+        }
+    }
+
+    &-primary-disabled {
+        @extend .Button-primary;
+
+        background: $Button-primary-disabled-bg;
+        color: $Button-primary-disabled-color;
+        cursor: default;
+
+        &:hover {
+            background: $Button-primary-disabled-bg;
+            color: $Button-primary-disabled-color;
+
+            svg {
+                fill: $Button-primary-disabled-color;
+            }
+        }
+    }
+
+    &-secondary {
+        @extend .Button;
+
+        border: $Button-secondary-border;
+        border-radius: $Button-border-radius;
+        color: $Button-secondary-color;
+        padding: $Button-padding;
+
+        svg {
+            fill: $Button-secondary-color;
+        }
+
+        &:hover {
+            border: $Button-secondary-border-hover;
+            color: $Button-secondary-color-hover;
+
+            svg {
+                fill: $Button-secondary-color-hover;
+            }
+        }
+    }
+
+    &-secondary-disabled {
+        @extend .Button-secondary;
+
+        border: $Button-secondary-border-disabled;
+        color: $Button-secondary-color-disabled;
+        cursor: default;
+
+        &:hover {
+            border: $Button-secondary-border-disabled;
+            color: $Button-secondary-color-disabled;
+
+            svg {
+                fill: $Button-secondary-color-disabled;
+            }
+        }
+    }
+}

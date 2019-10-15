@@ -1,0 +1,49 @@
+//Mile 2 Unique Colors
+$color-dark-green: #016848;
+$color-medium-green: rgba($color-dark-green, 0.88);
+$color-dark-blue: #1b3a43;
+$color-light-green: #d0df63;
+$color-light-blue: #c5e8f3;
+
+//Basic Component Color Palette
+$color-primary: #3776cd;
+$color-primary-hover: #5f91d7;
+$color-primary-disabled: lighten($color-primary, 30%);
+$color-primary-disabled-hover: lighten($color-primary-hover, 30%);
+
+$color-secondary: #32808f;
+$color-secondary-hover: #5b99a5;
+$color-secondary-disabled: lighten($color-secondary, 30%);
+$color-secondary-disabled-hover: lighten($color-secondary-hover, 30%);
+
+$color-warning: #ae610a;
+$color-warning-hover: #be803b;
+$color-warning-disabled: lighten($color-warning, 30%);
+$color-warning-disabled-hover: lighten($color-warning-hover, 30%);
+
+$color-alert: #d63d38;
+$color-alert-hover: #de635f;
+$color-alert-disabled: lighten($color-alert, 30%);
+$color-alert-disabled-hover: lighten($color-alert-hover, 30%);
+
+$color-success: #2a836a;
+$color-success-hover: #549b87;
+$color-success-disabled: lighten($color-success, 30%);
+$color-success-disabled-hover: lighten($color-success-hover, 30%);
+
+$color-border-navbar: #e2e4e8;
+
+// Gray scale
+$color-white: #ffffff;
+$color-gray-99: #fafcff;
+$color-gray-95: #f1f1f1;
+$color-gray-88: #d8ddea;
+$color-gray-87: #dddddd;
+$color-gray-78: #bac1d3;
+$color-gray-77: #b5c2d5;
+$color-gray-55: #c4cad0;
+$color-gray-48: #767a7f;
+$color-gray-34: #53565a;
+$color-gray-30: #4d4d4d;
+$color-gray-20: #303030;
+$color-black: #000000;

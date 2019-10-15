@@ -1,0 +1,79 @@
+@import '../../sass/colors';
+@import '../../sass/typography';
+
+// Modal Variables
+$modal-cover: transparentize($color-black, 0.33);
+$modal-bg: $color-gray-99;
+$modal-borders: $color-gray-88;
+$modal-txt: $color-gray-20;
+$modal-fontstack: $fontstack-body;
+
+$modal-title-size: $fontsize-large;
+$modal-title-weight: $fontweight-bold;
+$modal-title-color: $color-gray-20;
+// ---------------
+
+.Modal {
+    align-items: center;
+    background-color: $modal-cover;
+    bottom: 0;
+    color: $modal-txt;
+    display: flex;
+    font-family: $modal-fontstack;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    &__box {
+        align-items: center;
+        background-color: $modal-bg;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        max-height: 75%;
+        max-width: 60%;
+        min-height: 200px;
+        min-width: 300px;
+        padding: 1em;
+    }
+}
+
+.ModalTemplate {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    &__title {
+        align-items: center;
+        border-bottom: 1px solid $modal-borders;
+        display: flex;
+        font-size: $fontsize-large;
+        justify-content: center;
+
+        h1 {
+            color: $modal-title-color;
+            font-size: $modal-title-size;
+            font-weight: $modal-title-weight;
+            line-height: $modal-title-size * 1.35;
+            margin: 0.5em;
+            padding: 0;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1em;
+    }
+
+    &__close {
+        border-top: 1px solid $modal-borders;
+
+        .Button-primary {
+            margin: 1em;
+        }
+    }
+}
