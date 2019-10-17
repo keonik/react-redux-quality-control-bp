@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import './Modal.scss'
+import './Modal.css'
 
 /**
  * Hook that alerts clicks outside of the passed ref

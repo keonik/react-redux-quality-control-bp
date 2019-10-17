@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './ButtonBar.scss'
+import './ButtonBar.css'
 
 export const ButtonBarAlign = {
     left: 'left',

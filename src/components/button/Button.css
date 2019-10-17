@@ -1,89 +1,59 @@
-@import '../../sass/colors';
-@import '../../sass/typography';
-
-// Button Variables
-// ------------------------
-// Default transparent button -> Good for text/icon Buttons
-$Button-color: $color-primary;
-$Button-color-hover: lighten($color-primary, 15%);
-$Button-color-disabled: $color-gray-48;
-$Button-fontsize: $fontsize-normal;
-$Button-fontweight: $fontweight-normal;
-
-// Shared styles between Primary and Secondary buttons
-$Button-border-radius: 5px;
-$Button-padding: 0.35em 1.5em;
-
-// Primary Button
-$Button-primary-bg: $color-primary;
-$Button-primary-bg-hover: $Button-color-hover;
-$Button-primary-color: $color-white;
-$Button-primary-disabled-bg: $color-gray-48;
-$Button-primary-disabled-color: $color-gray-95;
-$Button-primary-fontsize: $fontsize-normal;
-$Button-primary-fontweight: $fontweight-normal;
-
-// Secondary Button
-$Button-secondary-color: $color-medium-green;
-$Button-secondary-color-hover: lighten($color-medium-green, 15%);
-$Button-secondary-border: 2px solid $color-medium-green;
-$Button-secondary-border-hover: 2px solid lighten($color-medium-green, 15%);
-$Button-secondary-color-disabled: $color-gray-48;
-$Button-secondary-border-disabled: 2px solid $color-gray-48;
-// ------------------------
-
-// Styling for buttons
 .Button {
     align-items: center;
     background: transparent;
     border: none;
-    color: $Button-color;
+    color: #3632eb;
     cursor: pointer;
     display: flex;
-    font-size: $Button-fontsize;
-    font-weight: $Button-fontweight;
+    font-size: 16px;
+    font-weight: 200;
     justify-content: center;
     margin: 0;
     outline: none;
     padding: 0;
+}
+.Button i,
+.Button svg {
+    fill: #3632eb;
+    height: 16px;
+    margin: 0.5em;
+    width: 16px;
+}
 
-    i,
-    svg {
-        fill: $Button-color;
-        height: $Button-fontsize;
-        margin: 0.5em;
-        width: $Button-fontsize;
-    }
+.Button i:hover,
+.Button svg:hover {
+    color: #4e4cbd;
+    fill: #4e4cbd;
+}
 
-    &:hover {
-        color: $Button-color-hover;
+.Button-disabled {
+    color: #757474;
+    cursor: default;
+}
+.Button-disabled svg {
+    fill: #757474;
+}
 
-        svg {
-            fill: $Button-color-hover;
-        }
-    }
+.Button-disabled:hover,
+.Button-disabled:hover svg {
+    color: #757474;
 
-    &-disabled {
-        @extend .Button;
+    fill: #757474;
+}
 
-        color: $Button-color-disabled;
-        cursor: default;
-
-        svg {
-            fill: $Button-color-disabled;
-        }
-
-        &:hover {
-            color: $Button-color-disabled;
-
-            svg {
-                fill: $Button-color-disabled;
-            }
-        }
-    }
-
-    &-primary {
-        @extend .Button;
+/* .Button-primary {
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: #3632eb;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 200;
+        justify-content: center;
+        margin: 0;
+        outline: none;
+        padding: 0;
 
         background: $Button-primary-bg;
         border-radius: $Button-border-radius;
@@ -161,4 +131,4 @@ $Button-secondary-border-disabled: 2px solid $color-gray-48;
             }
         }
     }
-}
+} */
