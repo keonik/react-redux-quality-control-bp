@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './XButton.scss'
+import './XButton.css'
 
 const XButton = ({ className, text, onClick }) => {
     let btnClass = `XButton`

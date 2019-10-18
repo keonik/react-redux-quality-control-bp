@@ -41,94 +41,65 @@
     fill: #757474;
 }
 
-/* .Button-primary {
-        align-items: center;
-        background: transparent;
-        border: none;
-        color: #3632eb;
-        cursor: pointer;
-        display: flex;
-        font-size: 16px;
-        font-weight: 200;
-        justify-content: center;
-        margin: 0;
-        outline: none;
-        padding: 0;
+.Button-primary {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #3632eb;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
 
-        background: $Button-primary-bg;
-        border-radius: $Button-border-radius;
-        color: $Button-primary-color;
-        font-size: $Button-primary-fontsize;
-        font-weight: $Button-primary-fontweight;
-        padding: $Button-padding;
+    background: #3632eb;
+    border-radius: 10px;
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+}
+.Button-primary svg {
+    fill: #cfcfcf;
+}
 
-        svg {
-            fill: $Button-primary-color;
-        }
+.Button-primary:hover {
+    background: #4e4cbd;
+    color: #cfcfcf;
+}
+.Button-primary svg:hover {
+    fill: #4e4cbd;
+}
 
-        &:hover {
-            background: $Button-primary-bg-hover;
-            color: $Button-primary-color;
+.Button-primary-disabled {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #3632eb;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
 
-            svg {
-                fill: $Button-primary-color;
-            }
-        }
-    }
-
-    &-primary-disabled {
-        @extend .Button-primary;
-
-        background: $Button-primary-disabled-bg;
-        color: $Button-primary-disabled-color;
-        cursor: default;
-
-        &:hover {
-            background: $Button-primary-disabled-bg;
-            color: $Button-primary-disabled-color;
-
-            svg {
-                fill: $Button-primary-disabled-color;
-            }
-        }
-    }
-
-    &-secondary {
-        @extend .Button;
-
-        border: $Button-secondary-border;
-        border-radius: $Button-border-radius;
-        color: $Button-secondary-color;
-        padding: $Button-padding;
-
-        svg {
-            fill: $Button-secondary-color;
-        }
-
-        &:hover {
-            border: $Button-secondary-border-hover;
-            color: $Button-secondary-color-hover;
-
-            svg {
-                fill: $Button-secondary-color-hover;
-            }
-        }
-    }
-
-    &-secondary-disabled {
-        @extend .Button-secondary;
-
-        border: $Button-secondary-border-disabled;
-        color: $Button-secondary-color-disabled;
-        cursor: default;
-
-        &:hover {
-            border: $Button-secondary-border-disabled;
-            color: $Button-secondary-color-disabled;
-
-            svg {
-                fill: $Button-secondary-color-disabled;
-            }
-        }
-    }
-} */
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    background: #757474;
+    color: #fff;
+    cursor: default;
+}
+.Button-primary-disabled:hover {
+    background: #7c7a7a;
+    color: #fff;
+}
+.Button-primary-disabled:hover svg {
+    fill: #7c7a7a;
+}

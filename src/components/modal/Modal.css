@@ -1,10 +1,11 @@
 .Modal {
     align-items: center;
-    background-color: #303030;
+    background-color: #424141;
     bottom: 0;
     color: rgb(233, 233, 233);
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+        sans-serif;
     justify-content: center;
     left: 0;
     position: fixed;
@@ -39,7 +40,7 @@
 }
 
 .ModalTemplate__title h1 {
-    color: #2134db;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 400;
     line-height: 25px;
@@ -54,7 +55,7 @@
 }
 
 .Modal__close {
-    border-top: 1px solid #2e20ad;
+    border-top: 1px solid #e2e2e2;
 }
 .Modal__close .Button-primary {
     margin: 1em;
