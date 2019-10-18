@@ -35,6 +35,7 @@
         "lint:js": "eslint src",
         "prettier": "prettier --check 'src/**/*'",
         "release": "standard-version --no-verify",
+        "security": "npm audit && npm outdated",
         "sonar": "sonar-scanner",
         "start": "react-scripts start",
         "test": "rm -rf ./coverage && CI=true react-scripts test --verbose --env=jsdom --coverage --colors"

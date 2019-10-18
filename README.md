@@ -42,6 +42,10 @@ Runs `prettier` to format code according to `.prettierrc`
 
 Runs `standard version --no-verify` which will auto generate change log updates based on commit messages making it easier to track changes in your `master` branch.
 
+### `npm run security`
+
+Runs `npm audit` and `npm outdated` to see if your program has outdated dependencies or potential security vulnerabilities.
+
 ### `npm run sonar`
 
 Runs `sonar-scanner` to send code quality analysis information to Mile Two's [Sonar Qube](http://sonar.mile-two.com) instance.
