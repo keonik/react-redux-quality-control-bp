@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 // components
+import { showModal } from 'store/actions/Modal';
 import InfoModal from './modal/InfoModal';
-import Button from './button/Button';
+import Button from './Button';
 // actions
-import { showModal } from '../store/actions/Modal';
 
 const lorem = `
 Automatically, all of these beautiful, beautiful things will happen. If you don't think every day is a good day - try missing a few. You'll see. Isn't it great to do something you can't fail at?
@@ -32,13 +32,7 @@ function Modal() {
             <Button onClick={triggerModal} variant="primary">
                 Show InfoModal
             </Button>
-            <InfoModal
-                isOpen={show}
-                onClose={resetModal}
-                title={title}
-                content={content}
-                buttonText="Got it!"
-            />
+            <InfoModal isOpen={show} onClose={resetModal} title={title} content={content} buttonText="Got it!" />
         </div>
     );
 }

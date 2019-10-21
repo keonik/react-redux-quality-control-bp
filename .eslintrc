@@ -28,6 +28,8 @@
     "rules": {
         "import/named": 2,
         "no-console": "warn",
+        // disallow class components
+        "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
         // allow jsx in .js files
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
         // all prettier file errors
@@ -59,5 +61,12 @@
         ],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
     }
 }

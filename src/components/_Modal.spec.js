@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import ConfirmModal from './ConfirmModal';
-import CustomModal from './CustomModal';
-import InfoModal from './InfoModal';
+import ConfirmModal from './modal/ConfirmModal';
+import CustomModal from './modal/CustomModal';
+import InfoModal from './modal/InfoModal';
 
 const { storeWrapper } = global;
 describe('<CustomModal />', () => {

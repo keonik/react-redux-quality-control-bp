@@ -11,17 +11,18 @@
     },
     "scripts": {
         "build": "react-scripts build",
-        "e2e": "cypress run",
         "eject": "react-scripts eject",
         "format": "npm run format:eslint && npm run format:sass && npm run format:prettier",
         "format:eslint": "eslint --fix src",
         "format:prettier": "prettier --write 'src/**/*'",
         "format:sass": "sass-lint-auto-fix",
+        "lighthouse": "BROWSER=none PORT=5051 npm start & (sleep 4 && lighthouse http://localhost:5051 --output html --output-path ./coverage/Lighthouse.html --quiet --chrome-flags='--headless' --view && killall node -9)",
         "lint": "npm run lint:js && npm run lint:sass",
         "lint:js": "eslint src",
         "lint:sass": "sass-lint -v -q",
         "prettier": "prettier --check 'src/**/*'",
         "release": "standard-version --no-verify",
+        "security": "npm audit  & npm outdated & depcheck --ignores='eslint-*,husky,lint-staged,node-sass,pretty-quick,babel-*' --skip-missing=true",
         "sonar": "sonar-scanner",
         "start": "react-scripts start",
         "test": "rm -rf ./coverage && CI=true react-scripts test --verbose --env=jsdom --coverage --colors"
@@ -74,15 +75,17 @@
     },
     "devDependencies": {
         "@testing-library/react": "^9.3.0",
-        "cypress": "^3.4.1",
+        "depcheck": "^0.8.3",
         "eslint": "^6.5.1",
         "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-airbnb-base": "^14.0.0",
         "eslint-config-prettier": "^6.4.0",
         "eslint-plugin-import": "^2.18.2",
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-react": "^7.16.0",
         "husky": "^3.0.9",
+        "lighthouse": "^5.6.0",
         "lint-staged": "^9.4.2",
         "node-sass": "^4.12.0",
         "prettier": "^1.18.2",
@@ -92,5 +95,10 @@
         "sass-lint-auto-fix": "0.17.0",
         "sonar-scanner": "^3.1.0",
         "standard-version": "^7.0.0"
-    }
+    },
+    "description": "Mile Two App built on top of `create-react-app`",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }

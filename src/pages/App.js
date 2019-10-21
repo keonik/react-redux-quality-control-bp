@@ -1,20 +1,15 @@
 import React from 'react';
 // components
-import Modal from './components/Modal';
+import Modal from 'components/Modal';
 // styles
-import './App.css';
+import './app/App.css';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
                 <h3>Get to coding</h3>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Learn React
                 </a>
                 <a
@@ -27,6 +22,8 @@ function App() {
                 </a>
                 <a
                     className="App-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/testing-library/react-testing-library"
                 >
                     Learn react-testing-library
@@ -40,19 +37,28 @@ function App() {
                     <li>
                         <a
                             className="App-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href="https://docs.google.com/document/d/1cxsq3DjkTxNpKUrZs6eHBcaEr0l6m9ysKwy0iB69Dn4/edit#heading=h.w8yjafx3qtvx"
                         >
                             Generate SonarQube project info
                         </a>
                     </li>
                     <li>
-                        <a className="App-link" href="http://expressway.mile-two.com/">
+                        <a
+                            className="App-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="http://expressway.mile-two.com/"
+                        >
                             Get components from Mile Two Expressway
                         </a>
                     </li>
                     <li>
                         <a
                             className="App-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href="https://gitlab.com/mile-two/mile-two-resources/tree/master"
                         >
                             Add and Edit merge request and issue templates for your repo
@@ -63,7 +69,7 @@ function App() {
                 <ul>
                     <li>
                         {' '}
-                        <a className="App-link" href="https://redux.js.org/">
+                        <a className="App-link" target="_blank" rel="noopener noreferrer" href="https://redux.js.org/">
                             Learn why redux is kewl
                         </a>
                     </li>
@@ -71,19 +77,28 @@ function App() {
                 <ul>
                     <li>
                         {' '}
-                        <a className="App-link" href="https://react-redux.js.org/">
+                        <a
+                            className="App-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://react-redux.js.org/"
+                        >
                             Here are the docs for react bindings with redux
                         </a>
                     </li>
                 </ul>
                 <h3>
                     Looking for a quick example? Download the{' '}
-                    <a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd">
+                    <a
+                        href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Redux developer tools
                     </a>
-                    , Open your chrome developer tools (right-click + inspect), click the Redux tab,
-                    and open and close the modal. Click on the actions, look at the state, payload,
-                    and play through the time line of events.
+                    , Open your chrome developer tools (right-click + inspect), click the Redux tab, and open and close
+                    the modal. Click on the actions, look at the state, payload, and play through the time line of
+                    events.
                 </h3>
                 <Modal />
             </header>

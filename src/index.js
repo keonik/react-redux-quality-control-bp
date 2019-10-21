@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 //components
-import App from './App';
+import App from 'pages/App';
 // store
-import store from './store';
-import { saveState, wipeState } from './store/middlewares/LocalStorage';
+import store from 'store';
+import { saveState, wipeState } from 'store/middlewares/LocalStorage';
 // styles
 import './index.css';
 

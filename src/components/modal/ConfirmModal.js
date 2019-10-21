@@ -1,8 +1,8 @@
 import React from 'react';
 
+import ButtonBar from 'components/button/ButtonBar';
+import Button, { ButtonVariant } from 'components/Button';
 import CustomModal from './CustomModal';
-import ButtonBar from '../button/ButtonBar';
-import Button, { ButtonVariant } from '../button/Button';
 
 export default ({ isOpen, title, content, cancelText, confirmText, onCancel, onConfirm }) => {
     return (

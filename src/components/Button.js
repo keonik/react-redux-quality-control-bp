@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Button.scss';
+import './button/Button.scss';
 
 export const ButtonVariant = {
     primary: 'primary',
@@ -16,13 +16,7 @@ export default function Button({ variant, children, className, disabled, label, 
     buttonClass += className ? ` ${className}` : '';
 
     return (
-        <button
-            className={buttonClass}
-            aria-label={label}
-            disabled={disabled}
-            onClick={onClick}
-            onBlur={onBlur}
-        >
+        <button className={buttonClass} aria-label={label} disabled={disabled} onClick={onClick} onBlur={onBlur}>
             {children}
         </button>
     );
