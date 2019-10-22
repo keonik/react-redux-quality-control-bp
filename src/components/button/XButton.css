@@ -1,0 +1,54 @@
+.XButton {
+    align-items: center;
+    background: #123eb6;
+    border: none;
+    border-radius: 500px;
+    color: #ffffff;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin: 0.25em;
+    outline: none;
+    padding: 0.5em 1em;
+}
+.XButton svg {
+    cursor: pointer;
+    fill: #a0a0a0;
+    height: 0.75em;
+    margin-left: 0.5em;
+    width: 0.75em;
+}
+
+.XButton svg:hover {
+    background: #ffffff 0.9;
+    height: 1em;
+    margin-left: 0.25em;
+    width: 1em;
+}
+
+.RadioPills {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.RadioPills__pill {
+    margin: 0.5em;
+}
+.RadioPills__pill .Button {
+    background: #707070;
+    border: none;
+    border-radius: 500px;
+    color: #ffffff;
+    padding: 0.25em 1em;
+}
+
+.RadioPills__pill-selected {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.RadioPills__pill-selected .Button {
+    background: #123eb6;
+    border: none;
+    color: #ffffff;
+}

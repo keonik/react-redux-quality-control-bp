@@ -1,0 +1,36 @@
+.ButtonBar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.ButtonBar button {
+    margin: 0.5em;
+}
+
+.ButtonBar-right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.ButtonBar-right button:last-child {
+    margin-right: 0;
+}
+
+.ButtonBar-left {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.ButtonBar-left button:last-child {
+    margin-left: 0;
+}
+
+.ButtonBar-center {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

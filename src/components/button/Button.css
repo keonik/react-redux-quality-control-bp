@@ -1,0 +1,105 @@
+.Button {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #3632eb;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.Button i,
+.Button svg {
+    fill: #3632eb;
+    height: 16px;
+    margin: 0.5em;
+    width: 16px;
+}
+
+.Button i:hover,
+.Button svg:hover {
+    color: #4e4cbd;
+    fill: #4e4cbd;
+}
+
+.Button-disabled {
+    color: #757474;
+    cursor: default;
+}
+.Button-disabled svg {
+    fill: #757474;
+}
+
+.Button-disabled:hover,
+.Button-disabled:hover svg {
+    color: #757474;
+
+    fill: #757474;
+}
+
+.Button-primary {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #3632eb;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+    background: #3632eb;
+    border-radius: 10px;
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+}
+.Button-primary svg {
+    fill: #cfcfcf;
+}
+
+.Button-primary:hover {
+    background: #4e4cbd;
+    color: #cfcfcf;
+}
+.Button-primary svg:hover {
+    fill: #4e4cbd;
+}
+
+.Button-primary-disabled {
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #3632eb;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    background: #757474;
+    color: #fff;
+    cursor: default;
+}
+.Button-primary-disabled:hover {
+    background: #7c7a7a;
+    color: #fff;
+}
+.Button-primary-disabled:hover svg {
+    fill: #7c7a7a;
+}

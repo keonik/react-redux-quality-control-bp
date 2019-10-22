@@ -1,4 +1,4 @@
-App built on top of `create-react-app` utilizing redux, sass, eslint, prettier, cypress, and more. Be sure to utilize sonarqube as well to monitor your code quality prior to releases.
+App built on top of `create-react-app` utilizing redux, eslint, prettier, and more. Be sure to utilize sonarqube as well to monitor your code quality prior to releases.
 
 ## Available Scripts
 
@@ -14,9 +14,9 @@ The page will reload if you make edits.<br> You will also see any lint errors in
 
 Auto runs tests and generates coverage files for sonar-qube and cli viewing.
 
-### `npm run e2e`
+### `npm run lighthouse`
 
-Runs `cypress` to validate end to end spec files
+Run's Google Lighthouse in browser testing tool
 
 ### `npm run lint`
 
@@ -24,7 +24,7 @@ Runs eslint and sass-lint checks to improve code quality.
 
 ### `npm run format`
 
-Runs eslint and sass-lint to auto fix potentially resolvable issues from cli.
+Runs eslint to auto fix potentially resolvable issues from cli.
 
 ### `npm run prettier`
 
@@ -38,13 +38,13 @@ Runs `eslint --fix` to attempt at auto resolve eslint errors
 
 Runs `prettier` to format code according to `.prettierrc`
 
-### `npm run format:sass`
-
-Runs `sass-lint-auto-fix` to attempt at auto resolve sass file lint errors
-
 ### `npm run release`
 
 Runs `standard version --no-verify` which will auto generate change log updates based on commit messages making it easier to track changes in your `master` branch.
+
+### `npm run security`
+
+Runs `npm audit` and `npm outdated` to see if your program has outdated dependencies or potential security vulnerabilities.
 
 ### `npm run sonar`
 
