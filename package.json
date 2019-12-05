@@ -1,19 +1,25 @@
 {
     "name": "cra-redux-plus-quality-control",
     "author": {
-        "name": "Keoni Fay",
+        "name": "John Fay",
         "email": "john.k.fay@gmail.com",
         "url": "https://github.com/keonik"
     },
     "keywords": [
+        "javascript",
         "react",
         "redux",
+        "react-redux",
+        "hooks",
         "eslint",
         "prettier",
         "styling",
         "frontend",
-        "sonarqube",
-        "cypress"
+        "lighthouse",
+        "a11y",
+        "accessibility",
+        "security",
+        "versioning"
     ],
     "version": "0.1.3",
     "private": false,
@@ -34,7 +40,6 @@
         "prettier": "prettier --check 'src/**/*'",
         "release": "standard-version --no-verify",
         "security": "npm audit && npm outdated",
-        "sonar": "sonar-scanner",
         "start": "react-scripts start",
         "test": "rm -rf ./coverage && CI=true react-scripts test --verbose --env=jsdom --coverage --colors"
     },
@@ -100,7 +105,6 @@
         "prettier": "^1.19.1",
         "pretty-quick": "^2.0.1",
         "react-scripts": "^3.3.0",
-        "sonar-scanner": "^3.1.0",
         "standard-version": "^7.0.1"
     }
 }
