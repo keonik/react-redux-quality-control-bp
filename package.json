@@ -63,17 +63,15 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm test && NODE_ENV=production lint-staged"
+            "pre-commit": "NODE_ENV=production lint-staged && npm test"
         }
     },
     "lint-staged": {
         "*.{js,jsx,scss,sass}": [
-            "pretty-quick --staged",
             "npm run format",
             "git add"
         ],
         "*.{json,css,md}": [
-            "pretty-quick --staged",
             "git add"
         ]
     },
@@ -103,7 +101,6 @@
         "lint-staged": "^9.5.0",
         "node-sass": "^4.13.0",
         "prettier": "^1.19.1",
-        "pretty-quick": "^2.0.1",
         "react-scripts": "^3.3.0",
         "standard-version": "^7.0.1"
     }
