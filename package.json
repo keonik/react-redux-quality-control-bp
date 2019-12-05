@@ -87,22 +87,22 @@
         ]
     },
     "devDependencies": {
-        "@testing-library/react": "^9.3.0",
-        "eslint": "^6.5.1",
+        "@testing-library/react": "^9.3.2",
+        "eslint": "^6.7.2",
         "eslint-config-airbnb": "^18.0.1",
-        "eslint-config-prettier": "^6.4.0",
+        "eslint-config-prettier": "^6.7.0",
         "eslint-plugin-import": "^2.18.2",
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-prettier": "^3.1.1",
-        "eslint-plugin-react": "^7.16.0",
-        "husky": "^3.0.9",
+        "eslint-plugin-react": "^7.17.0",
+        "husky": "^3.1.0",
         "lighthouse": "^5.5.0",
-        "lint-staged": "^9.4.2",
-        "node-sass": "^4.12.0",
-        "prettier": "^1.18.2",
-        "pretty-quick": "^2.0.0",
-        "react-scripts": "^3.2.0",
+        "lint-staged": "^9.5.0",
+        "node-sass": "^4.13.0",
+        "prettier": "^1.19.1",
+        "pretty-quick": "^2.0.1",
+        "react-scripts": "^3.3.0",
         "sonar-scanner": "^3.1.0",
-        "standard-version": "^7.0.0"
+        "standard-version": "^7.0.1"
     }
 }
